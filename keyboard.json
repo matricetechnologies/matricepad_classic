@@ -1,14 +1,17 @@
 {
     "manufacturer": "matrice_technologies",
-    "maintainer": "matricetechnologies",
-    "keyboard": "matrice_pad_classic",
-    "license": "GPL-2.0-or-later",
-    "matrix": {
+    "keyboard_name": "matrice_pad_classic",
+    "development_board": "promicro",
+    "diode_direction": "ROW2COL",
+    "features": {
+        "bootmagic": true,
+        "extrakey": true,
+        "mousekey": true
+    },
+    "matrix_pins": {
         "cols": ["D1", "D0", "D4", "C6"],
-        "diode_direction": "ROW2COL",
         "rows": ["B4", "E6", "D7"]
     },
-    "url": "https://github.com/matricetechnologies/matricepad_classic",
     "usb": {
         "device_version": "0.0.1",
         "pid": "0x6060",
@@ -16,7 +19,6 @@
     },
     "layouts": {
         "LAYOUT_3x4": {
-            "json_layout": true,
             "layout": [
                 {"matrix": [0, 0], "x": 0, "y": 0},
                 {"matrix": [0, 1], "x": 1, "y": 0},
